@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #ffae44;
+   --box-shadow: 0px 8px 25px 6px rgba(0, 0, 0, 0.2);
+   --box-shadow-hover: 0px 8px 25px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
+}
+
+button{
+   cursor: pointer;
+}
+
+ul {
+   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+   text-transform: capitalize;
+}
+
+.hero {
+   color: #fff;
+   background-position: center !important;
+   background-size: cover !important;
+   background-attachment: fixed !important;
+   padding: 1rem;
+}
+
+.hero .logo span {
+   color: var(--primary-color);
+}
+
+.hero .head {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1180px;
+   margin: auto;
+}
+
+.hero .head ul {
+   display: flex;
+   gap: 1rem;
+}
+
+.hero .head ul li a.active {
+   border-bottom: 2px solid #fff;
+   padding-bottom: 5px;
+}
+
+.head-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   min-height: 50vh;
+}
+
+.head-content h1 {
+   font-weight: 600;
+   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+   .hero .head {
+      justify-content: center;
+   }
+
+   .hero .head ul {
+      gap: 1.2rem;
+   }
+
+   .hero .logo {
+      display: none;
+   }
+}

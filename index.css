@@ -1,0 +1,87 @@
+.hero {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/1.jpg);
+}
+
+.head-content .btns {
+   display: flex;
+   gap: 1rem;
+}
+
+.head-content .btns a {
+   border-radius: 40px;
+   padding: 0.5rem 1.2rem;
+   font-weight: 600;
+   transition: all .2s ease-in-out;
+}
+
+.head-content .btns a:nth-child(1),
+.head-content .btns a:nth-child(2):hover {
+   border: 1px solid #fff;
+   background-color: transparent;
+   color: #fff;
+}
+
+.head-content .btns a:nth-child(2),
+.head-content .btns a:nth-child(1):hover {
+   border: 1px solid transparent;
+   background-color: #fff;
+   color: #262626;
+}
+
+.games {
+   padding: 3rem 1rem;
+   max-width: 1180px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
+}
+
+.games .card-game {
+   width: 400px;
+   max-width: 100%;
+   padding: 1rem 3rem;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+   flex-direction: column;
+   gap: 1rem;
+   box-shadow: var(--box-shadow);
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+   transition: all ease-in-out .2s;
+}
+
+.games .card-game:hover {
+   box-shadow: var(--box-shadow-hover);
+}
+
+.games .card-game::before {
+   content: '';
+   position: absolute;
+   left: -60px;
+   top: 20px;
+   width: 150px;
+   transform: rotate(-45deg);
+   height: 40px;
+   background-color: #262626;
+   z-index: 1;
+
+}
+
+.games>li>a {
+   background-color: var(--primary-color);
+   padding: .5rem 1rem;
+   font-weight: 600;
+   border-radius: 40px;
+   transition: all .2s ease-in-out;
+}
+
+.games>li>a:hover {
+   background-color: #262626;
+   color: #fff;
+}
