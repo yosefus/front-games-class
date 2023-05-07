@@ -1,0 +1,55 @@
+.hero {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/3.jpg);
+}
+
+.main {
+   max-width: 1180px;
+   margin: auto;
+   padding: 3rem 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main .about-card {
+   box-shadow: var(--box-shadow);
+   padding: 2rem;
+   border-radius: 10px;
+   max-width: 600px;
+   width: 100%;
+}
+
+.main .about-card p {
+   margin: 1rem 0;
+}
+
+.main .about-card .icons {
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 2rem;
+   font-size: 1.3rem;
+
+}
+
+.main .about-card .icons i {
+   background-color: #262626;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35px;
+   height: 35px;
+   box-shadow: var(--box-shadow);
+   transition: all ease-in-out .2s;
+   color: #fff;
+}
+
+.main .about-card .icons i:hover {
+   /* background-color: #26262670; */
+   box-shadow: var(--box-shadow-hover);
+   color: var(--primary-color);
+   transform: scale(.9);
+
+}

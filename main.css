@@ -20,9 +20,10 @@ a {
    text-decoration: none;
    color: inherit;
    cursor: pointer;
+   font-size: .9rem;
 }
 
-button{
+button {
    cursor: pointer;
 }
 
@@ -82,6 +83,14 @@ button {
 .head-content h1 {
    font-weight: 600;
    text-align: center;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   padding: .7rem 0;
+   background-color: #262626;
+   color: #fff;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,0 +1,9 @@
+.hero {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/4.jpg);
+}
+
+.main {
+   max-width: 1180px;
+   margin: auto;
+   padding: 3rem 1rem;
+}
