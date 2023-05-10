@@ -40,9 +40,7 @@ function updateKeyboard() {
       const letter = String.fromCharCode(i);
       const button = document.createElement('button');
       button.textContent = letter;
-      button.addEventListener('click', () => {
-         makeGuess(letter);
-      });
+      button.addEventListener('click', () => makeGuess(letter));
       keyboard.appendChild(button);
    }
 }
@@ -82,6 +80,7 @@ function resetGame() {
    updateWordDisplay();
    updateGuessesDisplay();
    updateKeyboard();
+
    const p = hangman.querySelector('p')
 
    if (p) {
