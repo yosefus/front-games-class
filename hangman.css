@@ -1,0 +1,49 @@
+.hero {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/5.jpg);
+}
+
+.hangman {
+   text-align: center;
+   min-height: 40vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#word-display {
+   font-size: 24px;
+   margin: 20px 0;
+}
+
+#guesses {
+   margin-bottom: 20px;
+}
+
+#keyboard {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 600px;
+}
+
+#keyboard button {
+   width: 30px;
+   height: 30px;
+   margin: 5px;
+}
+
+#reset-button {
+   padding: .6rem 1.2rem;
+   border-radius: 40px;
+   background-color: var(--primary-color);
+   margin-top: 20px;
+   border: 2px solid #262626;
+   color: #262626;
+   font-weight: 600;
+   transition: all ease-in-out .2s;
+}
+
+#reset-button:hover {
+   transform: scale(.95);
+}
